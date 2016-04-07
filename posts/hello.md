@@ -44,7 +44,7 @@ Le  support  me  convient (puisque  je  peux  modifier  mes  articles  au format
 markdown),        il       utilise       deux       de       mes       logiciels
 ([Syndic](https://github.com/Cumulus/Syndic)                                  et
 [Decompress](https://github.com/oklm-wsh/Decompress))    et    fonctionne    sur
-[MirageOS](https://mirage/io) - bref, le logiciel parfait!
+[MirageOS](https://mirage.io) - bref, le logiciel parfait!
 
 Donc c'est un  blog asez généraliste même si  les principaux sujets concerneront
 la programmation avec le langage OCaml.  Vous  pouvez obtenir le contenu avec le
