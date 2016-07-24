@@ -63,7 +63,7 @@ Atom d'ocsigen était  géré  par  Vincent  Balat  lui  même.  Et vous auriez 
 respecter la RFC sur tout ses points,  vous trouverez sûrement un flux incorrect
 dans ce tartare.
 
-![syndic error](https://oktm.io/imgs/syndic.png)
+![syndic error](https://github.com/oklm-wsh/oktm.io/raw/master/imgs/syndic.png)
 
 Le premier lancement de Syndic a donc  été un échec presque complet dans le sens
 où nous  avions pas  mal de  flux que  nous invalidions.  C'est  à ce  moment où
@@ -87,6 +87,12 @@ jamais bon  et je  dirais que  c'est un  peu des  deux.  Ainsi,  Syndic **doit**
 pouvoir gérer des flux invalides.  Sauf qu'on en revient sur le problème de base
 qui est celui de la sévérité des types en OCaml<sup>β</sup>.
 
+Nous pourrions remplacer  tout  les  types  qui  composent le [*record*][record]
+avec un `'a option` et donc être  totalement résiliant à tout contenu mais on en
+revient  à  un  problème  d'interface  inutilisable  (même  si  on  retrouve des
+librairies  pour  faciliter  la  manipulation  du  type  `option`,  il n'empêche
+que non, ce n'est pas utilisable).
+
 <div class="Notes">
 
 β:  dans d'autres langages, on n'a pas forcément ce problème
@@ -98,12 +104,6 @@ Dans l'utilisation,  c'est juste  très  pénible  de  faire  des tests dynamiqu
 supplémentaires pour tester si on a bien une donnée du type `int` par exemple.
 
 </div>
-
-Nous pourrions remplacer  tout  les  types  qui  composent le [*record*][record]
-avec un `'a option` et donc être  totalement résiliant à tout contenu mais on en
-revient  à  un  problème  d'interface  inutilisable  (même  si  on  retrouve des
-librairies  pour  faciliter  la  manipulation  du  type  `option`,  il n'empêche
-que non, ce n'est pas utilisable).
 
 ### Le type a toujours raison
 
